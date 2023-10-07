@@ -1,8 +1,10 @@
 <template>
   <div class="pagina">
-    <div class="text-h6 row justify-center">
-      Despesas do Usuario &nbsp;
-      <span class="text-weight-bold text-blue-8"> {{ usuarioLogado }}</span>
+    <div class="row justify-start">
+      <q-card-section class="text-black title">
+        <div class="text-h6">Minhas Despesas</div>
+      </q-card-section>
+      <!-- <span class="text-weight-bold text-blue-8"> {{ usuarioLogado }}</span> -->
     </div>
     <div class="q-pa row q-gutter-md q-mx-xl cards">
       <q-card
@@ -113,13 +115,15 @@ export default defineComponent({
 </script>
   
   <style scoped lang="scss">
+
+  
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .cards {
   display: flex;
   justify-content: space-between;
-}
-
-.pagina {
-  padding-top: 30px;
 }
 
 .img-despesa {

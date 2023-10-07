@@ -127,10 +127,8 @@
                   <q-item-label>Maintenance</q-item-label>
                 </q-item-section>
               </q-item>
-
             </q-list>
           </q-expansion-item>
-
 
           <q-expansion-item icon="map" label="Maps">
             <q-list class="q-pl-lg">
@@ -166,7 +164,6 @@
                   <q-item-label>Street View</q-item-label>
                 </q-item-section>
               </q-item>
-              
             </q-list>
           </q-expansion-item>
 
@@ -245,6 +242,12 @@
 
       <q-page-container class="bg-grey-2">
         <q-page class="q-pa-sm">
+          <q-breadcrumbs gutter="sm">
+            <q-breadcrumbs-el label="Home" />
+            <q-breadcrumbs-el label="Components" />
+            <q-breadcrumbs-el label="Breadcrumbs" />
+          </q-breadcrumbs>
+          <q-spacer />
           <!-- <q-responsive :ratio="1" class="col"> -->
           <q-card class="card-container">
             <transition name="slide-fade" mode="out-in">
@@ -296,7 +299,15 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-/* FONT AWESOME GENERIC BEAT */
+* {
+  margin: 0;
+}
+
+.q-breadcrumbs {
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
 .fa-beat {
   animation: fa-beat 5s ease infinite;
 }
@@ -359,5 +370,8 @@ export default defineComponent({
 
 .card-container {
   min-height: 89vh;
+  // padding-bottom: 40px;
+  // padding-top: 15px;
+  padding: 8px 12px 12px 12px;
 }
 </style>

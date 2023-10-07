@@ -37,7 +37,4 @@ export default defineComponent({
 </script>
   
   <style scoped lang="scss">
-.pagina {
-  padding-top: 30px;
-}
 </style>
